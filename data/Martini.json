@@ -1,0 +1,64 @@
+{
+  "Ingredients":
+  [
+    "Martini glass",
+    "Shaker",
+    {
+      "Name": "Gin",
+      "Type": "Liquid",
+      "Quantity": 2,
+      "Unit": "oz"
+    },
+    {
+      "Name": "Vermouth",
+      "Quantity": 1,
+      "Unit": "Splash"
+    },
+    {
+      "Name": "Pitted olive",
+      "Quantity": "2"
+    },
+    "Ice"
+  ],
+  "Process":
+  [
+    {
+      "Action": "Prepare glass",
+      "Ingredients":
+      [
+        "Pitted olives",
+        "Martini glass"
+      ],
+      "Result": "Prepared Glass",
+      "Duration": "30s"
+    },
+    {
+      "Action": "Combine",
+      "Ingredients": [
+        "Ice",
+        "Gin",
+        "Shaker"
+      ],
+      "Description": "",
+      "Media": [ ],
+      "ResultIngredient": "Full shaker",
+      "Duration": "10s"
+    },
+    {
+      "Action": "Shake",
+      "Ingedients": ["Full shaker"],
+      "Duration": "20s",
+      "ResultIngredient": "Chilled gin"
+    },
+    {
+      "Action": "Pour",
+      "Ingredients":
+      [
+        "Chilled gin",
+        "Martini glass"
+      ],
+      "Result": "Martini",
+      "Duration"
+    }
+  ]
+}
