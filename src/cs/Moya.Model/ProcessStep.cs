@@ -1,5 +1,5 @@
 namespace Moya.Model;
 
-public class ProcessStep
+public partial class ProcessStep
 {
 }
