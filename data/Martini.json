@@ -1,36 +1,56 @@
 {
-  "Ingredients":
-  [
-    "Martini glass",
-    "Shaker",
+  "Name": "Martini",
+  "Description": "The basic recipe",
+  "Manifest":
+  {
+    "Author": "Rolando de Aguiar <rdeaguiar@yahoo.com>",
+    "Date": "2023-04-02",
+    "Signature": "",
+    "Language": "en-US",
+    "Units": "Imperial",
+    "Url": ""
+  },
+  "Ingredients": [
+    {
+      "Name": "Martini glass"
+    },
+    {
+      "Name": "Shaker"
+    },
     {
       "Name": "Gin",
-      "Type": "Liquid",
-      "Quantity": 2,
-      "Unit": "oz"
+      "Quantity": {
+        "Number": 2,
+        "Unit": "oz"
+      }
     },
     {
       "Name": "Vermouth",
-      "Quantity": 1,
-      "Unit": "Splash"
+      "Quantity": {
+        "Unit": "splash"
+      }
     },
     {
       "Name": "Pitted olive",
-      "Quantity": "2"
+      "Quantity": {
+        "Number": 2
+      }
     },
-    "Ice"
+    {
+      "Name": "Ice"
+    }
   ],
-  "Process":
-  [
+  "Process": [
     {
       "Action": "Prepare glass",
-      "Ingredients":
-      [
+      "Ingredients": [
         "Pitted olives",
         "Martini glass"
       ],
-      "Result": "Prepared Glass",
-      "Duration": "30s"
+      "Results": [
+        "Prepared Glass"
+      ],
+      "Description": "Put the olives into the martini glass"
     },
     {
       "Action": "Combine",
@@ -39,26 +59,32 @@
         "Gin",
         "Shaker"
       ],
-      "Description": "",
-      "Media": [ ],
-      "ResultIngredient": "Full shaker",
-      "Duration": "10s"
+      "Description": "Put the ice and gin in the shaker",
+      "Results": [
+        "Full shaker"
+      ]
     },
     {
       "Action": "Shake",
-      "Ingedients": ["Full shaker"],
-      "Duration": "20s",
-      "ResultIngredient": "Chilled gin"
+      "Ingredients": [
+        "Full shaker"
+      ],
+      "Duration": "0.0:0:30",
+      "Results": [
+        "Chilled gin"
+      ],
+      "Description": "Shake it up!"
     },
     {
       "Action": "Pour",
-      "Ingredients":
-      [
+      "Ingredients": [
         "Chilled gin",
         "Martini glass"
       ],
-      "Result": "Martini",
-      "Duration"
+      "Results": [
+        "Martini"
+      ],
+      "Description": "Pour the chilled gin into the martini glass"
     }
   ]
 }
