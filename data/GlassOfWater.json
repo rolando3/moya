@@ -1,0 +1,22 @@
+{
+    "Description": "A nice cold glass of water",
+    "Name": "Glass of water",
+    "Ingredients":
+    [
+        {
+            "Name": "Cold tap water"
+        },
+        {
+            "Name": "Glass"
+        }
+    ],
+    "Process": [
+        {
+            "Action": "Pour",
+            "Ingredients": [
+                "Cold tap water",
+                "Glass"
+            ]
+        }
+    ]
+}
